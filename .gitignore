@@ -1,0 +1,12 @@
+/geostressed.iml
+/jmeter.log
+/log
+/results
+/test_geoserver/
+/.idea/
+/backend/backend/backend.iml
+/frontend/frontend.iml
+/frontend/dist/
+/frontend/node_modules/
+/backend/backend/target/
+/backend/backend/src/test/http/test_backends.http
