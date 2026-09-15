@@ -6,7 +6,8 @@ let api = useAPI();
 
 export const useCapabilitiesStore = defineStore('capabilities', () => {
     const capabilities = ref({
-        featureTypeList: [] as Array<{name: string, title: string, defaultCRS: string}>
+        featureTypeList: [] as Array<{name: string, title: string, defaultCRS: string, defaultStyle: string}>,
+        CRS: [] as Array<string>
     });
     const geoserverUrl: Ref<URL | null> = ref(null);
 

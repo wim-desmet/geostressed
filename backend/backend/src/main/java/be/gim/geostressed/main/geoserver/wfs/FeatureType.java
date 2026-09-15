@@ -15,6 +15,8 @@ public class FeatureType {
     @JacksonXmlProperty(localName = "DefaultCRS", namespace = TYPES.NAMESPACE_WFS)
     private String defaultCRS;
 
+    private String defaultStyle;
+
     public String getName() {
         return name;
     }
@@ -45,6 +47,15 @@ public class FeatureType {
 
     public void setDefaultCRS(String defaultCRS) {
         this.defaultCRS = defaultCRS;
+    }
+
+
+    public String getDefaultStyle() {
+        return defaultStyle;
+    }
+
+    public void setDefaultStyle(String defaultStyle) {
+        this.defaultStyle = defaultStyle;
     }
 }
 

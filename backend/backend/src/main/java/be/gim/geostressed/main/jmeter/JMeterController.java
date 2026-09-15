@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.File;
 import java.io.IOException;
 
 @RestController
@@ -20,8 +19,11 @@ public class JMeterController {
 
 
     @PostMapping("/test")
-    public JmeterOutput test(@RequestBody TestConfigurationDAO configuration) throws IOException, InterruptedException {
-        File testFile = jMeterService.generateTestFile(configuration);
-        return jMeterService.run(testFile);
+    public String test(@RequestBody TestConfigurationDAO configuration) throws IOException, InterruptedException {
+        System.out.println(configuration);
+//        File testFile = jMeterService.generateTestFile(configuration);
+        jMeterService.generateTestConfiguration(configuration);
+//        return jMeterService.run/**/();
+        return "done";
     }
 }

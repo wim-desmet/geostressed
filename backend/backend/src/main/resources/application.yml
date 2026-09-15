@@ -6,3 +6,7 @@ spring:
       static-locations:
         - classpath:/static/
         - file:${java.io.tmpdir}
+
+app:
+  jmeter:
+    path: C:\Users\wim.desmet\AppData\Local\Microsoft\WindowsApps\apache-jmeter-5.6.3\bin\jmeter.bat
